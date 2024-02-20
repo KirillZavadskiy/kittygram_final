@@ -173,5 +173,6 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-            ${{ github.actor }}, успех! ${{ github.event.commits[0].message }} send message from 🍻  
-            Репа тут: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+            ${{ github.actor }}, успех! ${{ github.event.commits[0].message }} пройден!  
+            Ссылка на коммит тут: 
+            https://github.com/${{ github.repository }}/commit/${{github.sha}}
