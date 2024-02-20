@@ -165,7 +165,7 @@ jobs:
 
   send_message:
     runs-on: ubuntu-latest
-   # needs: deploy
+    needs: deploy
     steps:
     - name: Send message
       uses: appleboy/telegram-action@master
@@ -173,6 +173,7 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-            ${{ github.actor }}, успех! ${{ github.event.commits[0].message }} пройден!  
-            Ссылка на коммит тут: 
+            ${{ github.actor }}, успех!
+            ${{ github.event.commits[0].message }} пройден!
+            Ссылка на коммит 👇: 
             https://github.com/${{ github.repository }}/commit/${{github.sha}}

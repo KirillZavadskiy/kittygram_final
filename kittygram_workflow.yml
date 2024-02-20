@@ -8,6 +8,11 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-latest
+
+    strategy:
+        matrix:
+          python-version: ['3.8', '3.9', '3.10']
+
     services:
       postgres:
         image: postgres:13.10
@@ -23,9 +28,6 @@ jobs:
       uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v4
-      with:
-        matrix:
-          python-version: ['3.8', '3.9', '3.10']
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip 
@@ -169,7 +171,9 @@ jobs:
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}  https://github.com/${{ github.repository }}/commit/${{github.sha}}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-            ${{ github.actor }}, успех! ${{ github.event.commits[0].message }} send message from 🍻  
-            Репа тут: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+            ${{ github.actor }}, успех!
+            ${{ github.event.commits[0].message }} пройден!
+            Ссылка на коммит 👇: 
+            https://github.com/${{ github.repository }}/commit/${{github.sha}}
