@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY', '')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
