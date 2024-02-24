@@ -1,5 +1,8 @@
+![Static Badge](https://img.shields.io/badge/auhtor:_Kirill-blue)
 ![GitHub last commit](https://img.shields.io/github/last-commit/KirillZavadskiy/kittygram_final)
-![Static Badge](https://img.shields.io/badge/auhtor-Kirill)
+![Docker Pulls](https://img.shields.io/docker/pulls/KirillZavadskiy/kittygram_final)
+![GitHub repo size](https://img.shields.io/github/repo-size/KirillZavadskiy/kittygram_final)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/KirillZavadskiy/kittygram_final/.github/workflows/main.yml)
 
 
 
