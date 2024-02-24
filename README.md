@@ -6,23 +6,40 @@
 
 
 
-## Как пров ерить работу с помощью автотестов
+# О проекте kittygram_final 
+Проект **kittygram_final** - это сайт, на котором пользователь может зарегистрироватся и создать карточку своего котика. Главная страница, это лента с котиками и их именами. Перейдя в карточку котика, можно увидеть, кроме его имении, сколько ему полных лет и достижения, например, уронил елку или украл второй носок. Что касается внутренней части проекта, то проект состоит из 
+# Технологии. 
+- djangorestframework 
+- django 
+- djoser
+- gunicorn
+- nginx
 
-В корне репозитория создайте файл tests.yml со следующим содержимым:
-```yaml
-repo_owner: ваш_логин_на_гитхабе
-kittygram_domain: полная ссылка (https://доменное_имя) на ваш проект Kittygram
-taski_domain: полная ссылка (https://доменное_имя) на ваш проект Taski
-dockerhub_username: ваш_логин_на_докерхабе
-```
-
-Скопируйте содержимое файла `.github/workflows/main.yml` в файл `kittygram_workflow.yml` в корневой директории проекта.
-
-Для локального запуска тестов создайте виртуальное окружение, установите в него зависимости из backend/requirements.txt и запустите в корневой директории проекта `pytest`.
-
-## Чек-лист для проверки перед отправкой задания
-
-- Проект Taski доступен по доменному имени, указанному в `tests.yml`.
-- Проект Kittygram доступен по доменному имени, указанному в `tests.yml`.
-- Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
-- В корне проекта есть файл `kittygram_workflow.yml`.
+# Использование программы
+1. Клонировать репозиторий 
+```` 
+git clone git@github.com:KirillZavadskiy/kittygram_final.git
+```` 
+2. Cоздать файл .env в корневой директории
+```` 
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+DB_HOST=db
+DB_PORT=5432
+SECRET_KEY=
+DEBUG=False
+ALLOWED_HOSTS=<домен>
+```` 
+3. Запустить файл docker-compose.production.yml
+```` 
+docker compose -f docker-compose.production.yml up --build
+```` 
+4. Выполнить миграции + статика
+```` 
+docker compose -f docker-compose.production.yml exec backend python manage.py migrate
+docker compose -f docker-compose.production.yml exec backend python manage.py collectstatic
+docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /static/static/
+```` 
+# Автор
+Кирилл Завадский
