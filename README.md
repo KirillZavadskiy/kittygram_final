@@ -1,10 +1,6 @@
-#  Как работать с репозиторием финального задания
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/:KirillZavadskiy/:kittygram_final/latest)
 
-## Что нужно сделать
-
-Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
-
-## Как проверить работу с помощью автотестов
+## Как пров ерить работу с помощью автотестов
 
 В корне репозитория создайте файл tests.yml со следующим содержимым:
 ```yaml
