@@ -29,7 +29,7 @@ DB_HOST=db
 DB_PORT=5432
 SECRET_KEY=
 DEBUG=False
-ALLOWED_HOSTS=<домен>
+ALLOWED_HOSTS=<'домен'>
 ```` 
 3. Запустить файл docker-compose.production.yml
 ```` 
