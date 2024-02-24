@@ -1,4 +1,5 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/KirillZavadskiy/kittygram_final)
+![Static Badge](https://img.shields.io/badge/auhtor-Kirill)
 
 
 
