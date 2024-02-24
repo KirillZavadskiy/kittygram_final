@@ -1,4 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/:KirillZavadskiy/:kittygram_final)
+![GitHub last commit](https://img.shields.io/github/last-commit/KirillZavadskiy/kittygram_final)
 
 
 
