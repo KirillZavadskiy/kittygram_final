@@ -1,4 +1,6 @@
-![GitHub commits since latest release](https://img.shields.io/github/commits-since/:KirillZavadskiy/:kittygram_final/latest)
+![GitHub last commit](https://img.shields.io/github/last-commit/:KirillZavadskiy/:kittygram_final)
+
+
 
 ## Как пров ерить работу с помощью автотестов
 
