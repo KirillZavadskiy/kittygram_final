@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 DEBUG = os.getenv('DEBUG', '').lower() == 'true'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(' ')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost 127.0.0.1').split(' ')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -63,7 +63,7 @@ DATABASES = {
         'NAME': os.getenv('POSTGRES_DB', 'django'),
         'USER': os.getenv('POSTGRES_USER', 'django'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', ''),
-        'HOST': os.getenv('DB_HOST', ''),
+        'HOST': os.getenv('DB_HOST', 'db'),
         'PORT': os.getenv('DB_PORT', 5432)
     }
 }
