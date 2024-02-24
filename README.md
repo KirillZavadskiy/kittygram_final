@@ -1,4 +1,4 @@
-![GitHub commits since latest release](https://img.shields.io/github/commits-since/:KirillZavadskiy/kittygram_final/latest)
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/:KirillZavadskiy/:kittygram_final/latest)
 
 Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
 
