@@ -1,5 +1,4 @@
 ![Static Badge](https://img.shields.io/badge/Python-blue)
-![Static Badge](https://img.shields.io/badge/Python-blue)
 ![GitHub last commit](https://img.shields.io/github/last-commit/KirillZavadskiy/kittygram_final)
 ![Docker Pulls](https://img.shields.io/docker/pulls/KirillZavadskiy/kittygram_final)
 ![GitHub repo size](https://img.shields.io/github/repo-size/KirillZavadskiy/kittygram_final)
