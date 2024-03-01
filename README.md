@@ -1,10 +1,5 @@
 ![Static Badge](https://img.shields.io/badge/Python-blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/KirillZavadskiy/kittygram_final)
-![Docker Pulls](https://img.shields.io/docker/pulls/KirillZavadskiy/kittygram_final)
-![GitHub repo size](https://img.shields.io/github/repo-size/KirillZavadskiy/kittygram_final)
-![Docker Pulls](https://img.shields.io/docker/pulls/KirillZavadskiy/kittygram_final)
-![Docker Automated build](https://img.shields.io/docker/automated/KirillZavadskiy/kittygram_final)
-
+![event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
 
 # О проекте kittygram_final 
 Проект **kittygram_final** - это сайт, на котором пользователь может зарегистрироватся и создать карточку своего котика. Главная страница, это лента с котиками и их именами. Перейдя в карточку котика, можно увидеть, кроме его имении, сколько ему полных лет и достижения, например, уронил елку или украл второй носок.
