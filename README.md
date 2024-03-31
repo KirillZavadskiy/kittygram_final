@@ -2,7 +2,7 @@
 ![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
 
 
-https://hellokitty.ddnsking.com
+Ссылка на веб сайт: https://hellokitty.ddnsking.com  Регистрируйся)
 
 # О проекте kittygram_final 
 Проект **kittygram_final** - это сайт, на котором пользователь может зарегистрироватся и создать карточку своего котика. Главная страница, это лента с котиками и их именами. Перейдя в карточку котика, можно увидеть, кроме его имении, сколько ему полных лет и достижения, например, уронил елку или украл второй носок.
