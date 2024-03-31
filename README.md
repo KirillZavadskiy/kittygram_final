@@ -1,6 +1,6 @@
 ![Static Badge](https://img.shields.io/badge/Python-blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/KirillZavadskiy/kittygram_final)
-![GitHub repo size](https://img.shields.io/github/repo-size/KirillZavadskiy/kittygram_final)
+![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
+
 
 https://hellokitty.ddnsking.com
 
